@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mixland – Smart time tracking for teams and freelancers. Track, analyze, and reclaim your most productive hours." />
+  <title>Mixland – Track your time and work wisely</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>⏱</text></svg>" />
+
+  <!-- Font preload for FOUT prevention -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <div class="container nav__inner">
+        <a href="#" class="nav__logo" aria-label="Mixland home">Mixland</a>
+        <ul class="nav__links" role="list">
+          <li><a href="#features">Demos</a></li>
+          <li><a href="#features">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#organize">Pages</a></li>
+          <li><a href="#cta">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#" class="nav__login">Login</a>
+          <a href="#cta" class="btn btn--blue">Get Started Free</a>
+        </div>
+        <button class="nav__burger" id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__mobile" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="#features">Demos</a>
+        <a href="#features">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#organize">Pages</a>
+        <a href="#cta">Contact</a>
+        <a href="#cta" class="btn btn--blue" style="margin-top:.5rem;text-align:center;">Get Started Free</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Manage your time easily</p>
+          <h1>Track your time<br />and work wisely</h1>
+          <p class="hero__desc">There is a time management facility through this modern software. Effective time management allows you to achieve great results...</p>
+          <form class="hero__form" aria-label="Email signup" onsubmit="return false;">
+            <label for="hero-email" class="sr-only">Email address</label>
+            <input id="hero-email" type="email" placeholder="Enter your email here" autocomplete="email" />
+            <button type="submit" class="btn btn--blue">Sign Up</button>
+          </form>
+          <div class="hero__checks" aria-label="Benefits">
+            <span>✓ No credit card is required</span>
+            <span>✓ Get 15 days free trial</span>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__circle"></div>
+          <div class="mock-card mock-card--main">
+            <div class="mock-header">
+              <span class="mock-dot blue"></span>
+              <span class="mock-title">Time Tracker</span>
+            </div>
+            <div class="mock-time">1 : 46</div>
+            <div class="mock-chart">
+              <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="0,35 20,28 40,30 60,18 80,22 100,10 120,15" stroke="#4F6EF7" stroke-width="2" fill="none"/>
+                <polyline points="0,35 20,28 40,30 60,18 80,22 100,10 120,15 120,40 0,40" fill="rgba(79,110,247,0.08)"/>
+              </svg>
+            </div>
+            <div class="mock-labels"><span>$204</span><span>$394</span></div>
+          </div>
+          <div class="mock-card mock-card--schedule">
+            <div class="mock-mini-title">Scheduled time for work</div>
+            <div class="mock-item"><span class="mock-dot-sm purple"></span><span>Design Marketplace</span></div>
+            <div class="mock-item"><span class="mock-dot-sm blue"></span><span>Status Number</span></div>
+            <div class="mock-item"><span class="mock-dot-sm orange"></span><span>Onboarding Design</span></div>
+          </div>
+          <div class="mock-card mock-card--task">
+            <div class="mock-mini-title">Task Completed</div>
+            <div class="mock-big-num">12</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="features-title">Simple interface through which<br />tasks can be easily managed</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-mockup" aria-hidden="true">
+              <div class="fm-title">Top Clients</div>
+              <div class="fm-row"><div class="fm-avatar"></div><div class="fm-info"><div class="fm-name">Maci Trovosi</div><div class="fm-loc">Chicago, IL</div></div><span class="fm-tag tag-active">Active</span></div>
+              <div class="fm-row"><div class="fm-avatar av2"></div><div class="fm-info"><div class="fm-name">Georgia Folds</div><div class="fm-loc">New York, NY</div></div><span class="fm-tag tag-active">Active</span></div>
+              <div class="fm-row"><div class="fm-avatar av3"></div><div class="fm-info"><div class="fm-name">Jonas Barnat</div><div class="fm-loc">Los Angeles, CA</div></div><span class="fm-tag tag-active">Active</span></div>
+              <div class="fm-row"><div class="fm-avatar av4"></div><div class="fm-info"><div class="fm-name">Jane Doe</div><div class="fm-loc">New York, NY</div></div><span class="fm-tag tag-pending">Pending</span></div>
+            </div>
+            <h3>Track Customers</h3>
+            <p>Customer activity can be easily tracked with one click.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-mockup" aria-hidden="true">
+              <div class="fm-msg">
+                <div class="fm-avatar"></div>
+                <div>
+                  <div class="fm-name">Jorge Watson</div>
+                  <div class="fm-sub">6 min · New York, NY</div>
+                  <div class="fm-bubble">You really have helped us with our projects with us...</div>
+                  <div class="fm-reply-btn" role="button" tabindex="0">Reply</div>
+                </div>
+              </div>
+              <div class="fm-divider"></div>
+              <div class="fm-msg">
+                <div class="fm-avatar av2"></div>
+                <div>
+                  <div class="fm-name">Kathryn Cooper</div>
+                  <div class="fm-bubble sm">Lorem ipsum dolor sit amet, consectetur adipiscing ut...</div>
+                </div>
+              </div>
+            </div>
+            <h3>Get Feedbacks</h3>
+            <p>Customers can leave their own comments and feedback.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-mockup" aria-hidden="true">
+              <div class="fm-title">Task Progress</div>
+              <div class="fm-progress-row"><span>Copywriting</span><span class="fm-frac">5/6</span></div>
+              <div class="fm-bar"><div class="fm-fill" style="width:83%;background:#4F6EF7"></div></div>
+              <div class="fm-progress-row"><span>Illustrations</span><span class="fm-frac">0/10</span></div>
+              <div class="fm-bar"><div class="fm-fill" style="width:5%;background:#22C55E"></div></div>
+              <div class="fm-progress-row"><span>UI Design</span><span class="fm-frac">2/7</span></div>
+              <div class="fm-bar"><div class="fm-fill" style="width:28%;background:#F59E0B"></div></div>
+            </div>
+            <h3>See Results</h3>
+            <p>The results show how much work has been done.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APP SECTION -->
+    <section class="app-section" aria-labelledby="app-title">
+      <div class="container app-section__inner">
+        <div class="app-section__visual" aria-hidden="true">
+          <div class="app-circle"></div>
+          <div class="app-mock">
+            <div class="app-mock__header"><span>Today</span><span class="app-mock__total">$46.46</span></div>
+            <div class="app-task"><div class="app-task__icon icon-ui">UI</div><div class="app-task__info"><span>UI Design</span><span class="app-task__time">10:00 – 12:00</span></div><span class="app-task__dur">$14.00</span></div>
+            <div class="app-task app-task--accent"><div class="app-task__icon icon-rp">RP</div><div class="app-task__info"><span>Report analysis</span><span class="app-task__time">12:00 – 13:00</span></div><span class="app-task__dur">$8.50</span></div>
+            <div class="app-task"><div class="app-task__icon icon-ma">MA</div><div class="app-task__info"><span>Marketing App</span><span class="app-task__time">13:00 – 15:00</span></div><span class="app-task__dur">$15.00</span></div>
+            <div class="app-task"><div class="app-task__icon icon-lw">LW</div><div class="app-task__info"><span>Learn Vue.js</span><span class="app-task__time">15:00 – 16:00</span></div><span class="app-task__dur">$12.46</span></div>
+            <div class="app-task"><div class="app-task__icon icon-tr">TR</div><div class="app-task__info"><span>Read 10 pages of book</span><span class="app-task__time">16:00 – 18:00</span></div><span class="app-task__dur">$10.50</span></div>
+          </div>
+        </div>
+        <div class="app-section__text">
+          <h2 id="app-title">Excellent way to use<br />your busy time smartly</h2>
+          <p>Time management is the process of planning and exercising conscious control of specific activities.</p>
+          <p>Get it right, and you'll end up working smarter to get more done in less time. Drawing up a to-do list might not seem like a groundbreaking technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANIZE SECTION -->
+    <section class="organize-section" id="organize" aria-labelledby="organize-title">
+      <div class="container organize-section__inner">
+        <div class="organize-section__text">
+          <h2 id="organize-title">Organize and plan how<br />you can divide your time</h2>
+          <p>Time management helps you prioritize your tasks so that you ensure you have enough time available to complete.</p>
+          <p>Time plays a significant role in our life. Time helps you build of structuring and organizing our daily activities. If you understand the value of time better, you can gain experience and develop.</p>
+        </div>
+        <div class="organize-section__visual" aria-hidden="true">
+          <div class="org-card">
+            <div class="org-card__header">
+              <span>Scheduled time for work</span>
+              <div class="org-donut">
+                <svg viewBox="0 0 80 80" aria-hidden="true">
+                  <circle cx="40" cy="40" r="30" fill="none" stroke="#E5E7EB" stroke-width="10"/>
+                  <circle cx="40" cy="40" r="30" fill="none" stroke="#4F6EF7" stroke-width="10" stroke-dasharray="141 47" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+                  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" font-weight="700" fill="#111">75%</text>
+                </svg>
+              </div>
+            </div>
+            <div class="org-task"><div class="org-dot blue"></div><div><div class="org-task-name">Design Marketplace</div><div class="org-task-time">Time · 2:30 hours</div></div><div class="org-task-icon">🎨</div></div>
+            <div class="org-task"><div class="org-dot purple"></div><div><div class="org-task-name">Status Number</div><div class="org-task-time">Time · 2:00 hours</div></div><div class="org-task-icon">📊</div></div>
+            <div class="org-task"><div class="org-dot green"></div><div><div class="org-task-name">On-branding Design</div><div class="org-task-time">Time · 3:00 hours</div></div><div class="org-task-icon">✏️</div></div>
+          </div>
+          <div class="org-mini-chart">
+            <div class="mini-chart-bars" aria-hidden="true">
+              <div style="--h:50%"></div><div style="--h:80%"></div><div style="--h:60%"></div><div style="--h:90%"></div><div style="--h:40%"></div><div style="--h:70%"></div>
+            </div>
+            <div class="mini-chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLUE / TESTIMONIALS -->
+    <section class="blue-section" aria-labelledby="testi-title">
+      <div class="container">
+        <div class="blue-section__head">
+          <h2 id="testi-title">You are not alone. The pain of<br />website creation is real</h2>
+        </div>
+        <div class="testi__grid" role="list">
+          <article class="testi-card" role="listitem">
+            <div class="testi-avatar" aria-hidden="true"></div>
+            <p>"The easiest and most accurate way to track time across teams and finish the projects. Timely's automatic."</p>
+            <div class="testi-author"><strong>Jerome Bell</strong><span>CTO, Wavemo</span></div>
+          </article>
+          <article class="testi-card" role="listitem">
+            <div class="testi-avatar av2" aria-hidden="true"></div>
+            <p>"It is a time tracking solution that helps employers track hours across multiple tasks and projects that software."</p>
+            <div class="testi-author"><strong>Leslie Alexander</strong><span>President of Marketing, IDS</span></div>
+          </article>
+          <article class="testi-card" role="listitem">
+            <div class="testi-avatar av3" aria-hidden="true"></div>
+            <p>"A simple and affordable solution for capturing employee time to run payroll, invoice clients and manage productivity."</p>
+            <div class="testi-author"><strong>Wade Warren</strong><span>Founder, Gravity</span></div>
+          </article>
+        </div>
+        <div class="trusted">
+          <p>Trusted by world-class business owners</p>
+          <div class="trusted__logos" aria-label="Partner logos">
+            <span class="t-logo">📄 PAPERZ</span>
+            <span class="t-logo">Dorfus</span>
+            <span class="t-logo">🔷 Martino</span>
+            <span class="t-logo">◻ square</span>
+            <span class="t-logo">🔶 Gobona</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog" id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="blog-title">Read our blog to learn<br />about time management</h2>
+          <p>Time management is the process of planning and exercising conscious control of time spent on specific activities.</p>
+        </div>
+        <div class="blog__grid">
+          <article class="blog-card">
+            <div class="blog-card__img" aria-hidden="true"></div>
+            <div class="blog-card__body">
+              <time class="blog-date" datetime="2023-11-23">November 23, 2023</time>
+              <h3>15+ Most Effective and Proven Time Management Techniques</h3>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__img blog-card__img--2" aria-hidden="true"></div>
+            <div class="blog-card__body">
+              <time class="blog-date" datetime="2023-11-30">November 30, 2023</time>
+              <h3>Time tracking reports – why do you need time management?</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA YELLOW -->
+    <section class="cta-yellow" id="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-yellow__inner">
+          <h2 id="cta-title">Join our community</h2>
+          <p>Work smarter with this time management and not hard,<br />join our newsletter for a better experience.</p>
+          <form class="cta-form" aria-label="Newsletter signup" onsubmit="return false;">
+            <label for="cta-email" class="sr-only">Email address</label>
+            <input id="cta-email" type="email" placeholder="Enter your email address" autocomplete="email" />
+            <button type="submit" class="btn btn--dark">Get started now</button>
+          </form>
+          <p class="cta-note">No ads. No tricks. No commitments.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">Mixland</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit amet, voluptat dicta et oficia excepturi sint.</p>
+        <button class="btn btn--chat">💬 Start Live Chat</button>
+      </div>
+      <div class="footer__col">
+        <strong>Company</strong>
+        <a href="#">About</a><a href="#">Find us</a><a href="#">Works</a><a href="#">Career</a>
+      </div>
+      <div class="footer__col">
+        <strong>Help</strong>
+        <a href="#">Customer Support</a><a href="#">Delivery Details</a><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__col">
+        <strong>Resources</strong>
+        <a href="#">Free eBooks</a><a href="#">Development Tutorial</a><a href="#">Intro to Blog</a><a href="#">Youtube Playlist</a>
+      </div>
+      <div class="footer__col">
+        <strong>Extra Links</strong>
+        <a href="#">Customer Support</a><a href="#">Delivery Details</a><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© Copyright 2023, All Rights Reserved by Flowwerk</span>
+        <div class="footer__socials" aria-label="Social media links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
