@@ -218,16 +218,18 @@ if (!prefersReduced) {
    7. BLOG
 ══════════════════════════════════════ */
 if (!prefersReduced) {
-  gsap.from('.blog .section-head', {
-    y: 30, opacity: 0, duration: .8, ease: 'power3.out',
-    scrollTrigger: { trigger: '.blog', start: 'top 80%' }
+  gsap.from('#blog-title, #blog-title + p', {
+    y: 30, opacity: 0, duration: .8,
+    stagger: 0.1,
+    ease: 'power3.out',
+    scrollTrigger: { trigger: '.blog', start: 'top 75%', once: true }
   });
   gsap.from('.blog-card', {
     y: 40, opacity: 0,
     duration: .8,
     stagger: 0.15,
     ease: 'power3.out',
-    scrollTrigger: { trigger: '.blog__grid', start: 'top 82%' }
+    scrollTrigger: { trigger: '.blog__grid', start: 'top 85%', once: true }
   });
 }
 
