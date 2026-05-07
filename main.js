@@ -121,8 +121,6 @@ document.querySelectorAll('.fm-fill').forEach(el => fillObs.observe(el));
 
 /* ══════════════════════════════════════
    8. GSAP ANIMATIONS
-   — all wrapped in window.load so layout
-     is fully settled on GitHub Pages too
 ══════════════════════════════════════ */
 window.addEventListener('load', () => {
   if (prefersReduced) return;
